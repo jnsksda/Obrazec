@@ -1,0 +1,132 @@
+
+body {
+    font-family: Roboto,sans-serif;
+    text-align: center;
+	background-color: #B3B3B3;
+	
+}
+form {
+
+    text-align: left;
+    display: inline-block;
+    background-color: #f2f2f2;
+    width: 600px;
+    border: 2px solid black;
+    padding: 40px;
+    line-height: 30px;
+    border-collapse: collapse;
+	border-radius:7px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+	
+}
+
+
+.flex > div {
+    border: 1px solid black;
+    border-collapse: collapse;
+    flex-basis: 30%;\
+
+}
+
+div.podatkia {
+  font-size: 15px;
+  border-collapse: collapse;
+  
+}
+
+
+div.podatkib {
+  font-size: 15px;
+  border-collapse: collapse;
+  
+}
+
+
+div.izdelki {
+	text-align: center
+}
+
+
+.prazno{
+    border: 1px solid black;
+  padding-bottom: 0px;
+  border-style: hidden;
+  border-collapse: collapse;
+  
+	
+}
+
+}
+.velikost{
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  
+}
+
+}
+.datum{
+  font-size:20px;
+  border-radius:5px;
+}
+
+
+#racun{
+	
+	text-align: center;
+	
+}
+
+#datum{
+	text-align: right;
+	
+	
+}
+
+label{
+	padding-left:3px;
+}
+
+input {
+	border-style: hidden;
+    background-color: rgb(242, 241, 241);
+	
+	border-radius:5px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 5%;
+    height: 10px;
+}
+
+textarea{
+	border-radius:5px;
+	background-color: rgb(242, 241, 241)
+}
+
+
+table{
+	width:100%;
+	
+}
+	
+input:hover {
+    background-color: rgba(171, 171, 149, 0.37)
+}
+input:focus{ background-color: rgba(196, 196, 196, 0.37)
+} 
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

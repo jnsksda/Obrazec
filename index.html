@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>		
+	<title>Alpina obrazec</title>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/x-icon" href="slike/favicon.ico"/>
+	<link rel="stylesheet" href="css/css.css">		
+</head>
+
+<body>
+	
+	
+
+
+
+  <form>
+  <img src="slike/alpina.svg"  draggable=false />
+  
+    <h2 style="text-align: center">Obrazec za vračilo izdelkov</h2>
+    <hr style="color: black;">
+	<h4>Podatki o naročilu<span style="color:red">*</span></h4>
+    <div class="flex">
+		<div class="podatkia">
+			<label for="stnar">Št. naročila:</label>
+			<input type="number" id="stnar" name="stnarocila" required>
+			<label for="strac">Št. računa:</label>
+			<input type="number" id="strac" name="stracuna" required>
+		</div>
+		<div class="podatkib">	
+			<label for="stnar">Datum naročila:</label>
+			<input type="date" value=2021-10-21 id="datnar" name="datnarocila" style="width:150px; height:30px;" required>
+			
+			
+			<div class="prazno">&nbsp;</div>
+		</div>
+	</div>
+	<br>
+      <h4>Kupec<span style="color:red">*</span></h4><br>
+      <div class="flex">
+			<div><label for="imepriimek">Ime in priimek:</label></div>
+			<div><input type="text" style="width: 200px " id="imepriimek" name="imeinpriimek" maxlength="26" required></div>
+	  </div>
+	  <div class="flex">
+			<div><label for="nas">Naslov:</label></div>
+			<div><input  type="text" style="width: 200px " id="nas" name="naslov" maxlength="32" required></div> 
+	  </div>
+	  <div class="flex">
+			<div><label for="tel">Telefon:</label></div>
+			<div><input type="number" style="width: 200px " id="tel" name="telefon" maxlength="12" required></div>
+	  </div>
+	  <div class="flex">
+			<div><label for="email">e-mail:</label></div>
+			<div><input type="email" style="width: 200px " id="email" name="emajl" maxlength="28" required></div>
+	  </div>
+      
+      <br>
+	  
+	  <h4>Izdelki<span style="color:red">*</span></h4>
+	  <div class="izdelki">
+        <div class="flex">
+		
+		
+		<div><label for="naziv"><span class="velikost">Naziv izdelka</span></label></div>
+        <div><label for="velst"><span class="velikost">Velikostna številka</span></label></div>
+		<div><label for="cena"><span class="velikost">Cena</span></label></div>
+		
+           
+        <div><input  type="text" id="naziv" name="nazivizdelka" maxlength="23" required></div>
+
+        <div><input type="number" id="velst" name="velikoststevilke" required></div>
+
+        <div><input type="number" id="cena" name="cena" required></div>
+
+        <div><input  type="text" id="naziv" name="nazivizdelka" maxlength="23"></div>
+
+        <div><input type="number" id="velst" name="velikoststevilke"></div>
+
+        <div><input type="number" id="cena" name="cena"></div>
+
+        <div><input  type="text" id="naziv" name="nazivizdelka" maxlength="23"></div>
+
+        <div><input type="number" id="velst" name="velikoststevilke"></div>
+		
+		<div><input type="number" id="cena" name="cena"></div>
+		
+      </div>
+	  </div>
+      <br>
+      <h4>Razlog za vračilo:<span style="color:red">*</span></h4>
+	  <div class="razlog">
+	 
+      <div class="flex">
+	  <div>
+      <input type="radio" id="1" name="a" required>
+	  Odstop od pogodbe oz. vračilo izdelka<input type=text style="height: 50px; width: 400px " placeholder="TRR" maxlength="23" >
+	  </div>
+	  </div>
+	  
+	  <div class="flex">
+	  <div>
+      <input type="radio" id="2" name="a" >
+	  Zamenjava izdelka<input type=text style="height: 50px; width: 400px " placeholder="Zelim drug izdelek" maxlength="50">
+	  </div>
+	  </div>
+	  
+	  <div class="flex">
+	  <div>
+      <input type="radio" id="3" name="a" >
+	  Poškodovan izdelek<input type=text style="height: 50px; width: 400px " placeholder="Opis poskodbe" maxlength="50">
+	  </div>
+	  </div>
+      
+	  </div>
+      <br>
+	  
+      <h4>Opombe:</h4><br><textarea style="resize: none; height: 100px; width: 400px "></textarea>
+      <br>
+	  <h4>Kopija računa:<span style="color:red">*</span></h4>
+      <div id="racun"><input type="file" required></div>
+      <br>
+	  
+	  Izdelke vrnite na naslov:<br>
+	  Alpina, d.o.o.
+	  
+	  <table>
+	  <tr>
+	  <td>Strojarska ulica 2</td>
+	  <td id="datum">Datum: <input type="date" value=2021-11-30 required></td>
+	  </tr>
+	  </table>
+	
+	  
+	  
+	  4226 Žiri - s pripisom spletna prodajalna<br>
+      
+	  
+      <br>
+      <input type="submit" value="Pošlji" style="font-size: 20px">
+  </form>
+</body>
+</html>
